@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://1pivw6wilbx4"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_7x6k0"]
+[ext_resource type="FontFile" uid="uid://dxp6161uggxuw" path="res://Seven Segment.ttf" id="2_aslhi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xvj7h"]
+font = ExtResource("2_aslhi")
+font_size = 128
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7x6k0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+pivot_offset = Vector2(576, 324)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="h1" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="h2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="c1" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = ":"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="m1" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="m2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="c2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = ":"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="s1" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="s2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_xvj7h")
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
